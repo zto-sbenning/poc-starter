@@ -10,6 +10,10 @@ export class ArchService {
 
   constructor(private store: Store<any>) { }
 
+  /**
+   * Add a TaskState to the store
+   * @param task the task to base the TaskSate to add
+   */
   create(task: Task) {
     const taskState = {
       id: task.id,

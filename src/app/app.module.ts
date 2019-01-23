@@ -7,6 +7,9 @@ import { AboutModule } from './about/about.module';
 import { NotFoundModule } from './not-found/not-found.module';
 import { SharedModule } from './shared/shared.module';
 import { RootStoreModule } from './root-store/root-store.module';
+import { ArchModule } from './arch/arch.module';
+import { StorageService } from './services/storage/storage.service';
+import { DialogService } from './services/dialog/dialog.service';
 
 @NgModule({
   declarations: [
@@ -18,9 +21,13 @@ import { RootStoreModule } from './root-store/root-store.module';
     HomeModule,
     AboutModule,
     NotFoundModule,
-    RootStoreModule
+    RootStoreModule,
+    ArchModule
   ],
-  providers: [],
+  providers: [
+    StorageService,
+    DialogService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

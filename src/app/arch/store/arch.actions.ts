@@ -1,6 +1,6 @@
-import { Action } from "@ngrx/store";
-import { Update } from "@ngrx/entity";
-import { TaskState } from "./arch.state";
+import { Action } from '@ngrx/store';
+import { Update } from '@ngrx/entity';
+import { TaskState } from './arch.state';
 
 export enum ArchActionType {
     addTask = '[Arch Action Type] Add Task',
