@@ -1,0 +1,3 @@
+<ng-container [ngSwitch]="style$|async">
+  <app-simple-header-presenter *ngSwitchCase="styleMap.simple" [title]="title$|async" [links]="links$|async"></app-simple-header-presenter>
+</ng-container>
